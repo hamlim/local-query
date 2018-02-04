@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "build": "babel index.js --out-dir dist/ && babel example/index.js --out-file examp/index.js",
+    "postbuild": "cp dist/index.js examp/lib.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-codegen": "^1.2.1",
+    "babel-preset-env": "^1.6.1",
+    "graphql-tag": "^2.6.1"
+  },
+  "name": "local-query",
+  "version": "1.0.0",
+  "description": "tbd",
+  "main": "dist/index.js",
+  "repository": "https://github.com/hamlim/local-query",
+  "author": "Matthew Hamlin <hamlim@outlook.com> (https://matthamlin.me/)",
+  "license": "MIT",
+  "private": false
+}
